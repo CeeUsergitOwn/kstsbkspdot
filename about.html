@@ -82,40 +82,13 @@
             <p>
               Available Commands:
               <br>
-              <span class="prompt">home</span> - Home Page
+              <span class="prompt">home</span> - Only Home Page Available From This Page!
               <br>
-              <span class="prompt">about</span> - About Web Terminal
-              <br>
-              <span class="prompt">games</span> - Unblocked Games
-              <br>
-              <span class="prompt">week</span> - Site of the week
-              <br>
-              <span class="prompt">calculator</span> - Easy Calculation
-              <br>
-              <span class="prompt">contact</span> - Contact Me
             </p>
           `;
           break;
         case "home":
           window.location.href = "index.html";
-          break;
-        case "calculator":
-          window.location.href = "calculator.html";
-          break;
-        case "kciyap":
-          window.location.href = "https://www.youtube.com/watch?app=desktop&v=DCX5Oa279ao";
-          break;
-        case "about":
-          window.location.href = "about.html";
-          break;
-        case "week":
-          window.location.href = "https://www.google.com/?safe=active&ssui=on";
-          break;
-        case "games":
-          window.location.href = "youtube.com";
-          break;
-        case "contact":
-          window.location.href = "contact.html";
           break;
         default:
           output.innerHTML += `<p>Command not found. Type "<span class="prompt">help</span>" for a list of available commands.</p>`;
