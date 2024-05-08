@@ -1,0 +1,47 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.terminal {
+    border: 2px solid rgb(26, 189, 26);
+    border-radius: 10px;
+    padding: 11px;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0;
+    float: left;
+    box-shadow: 0px 0px 2cap #00ff00;
+}
+
+.prompt {
+    color: #1fc21f;
+    text-shadow: 0px 0px 1px rgb(67, 255, 9), 0 0 25px #00ff00, 0 0 5px #07f007;
+}
+
+.prompt2 {
+    color: #1fc21f;
+    text-shadow: 1px 1px 2px black, 0 0 25px #00ff00, 0 0 5px #07f007;
+}
+
+.terminal input[type="text"] {
+    background-color: rgb(26, 26, 26);
+    color: white; 
+    border: none; 
+    outline: none; 
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    box-sizing: border-box; 
+    box-shadow: 0px 0px 2cap #00ff00;
+    border-radius: 10px;
+}
+
+.textwhite{
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px rgb(255, 255, 255), 0 0 25px #ffffff, 0 0 5px #ffffff;
+}
