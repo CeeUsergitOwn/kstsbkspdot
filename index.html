@@ -1,74 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Terminal Website</title>
-  <style>
-    body {
-      font-family: monospace;
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      margin: 0;
-    }
-
-    .terminal {
-      border: 2px solid rgb(26, 189, 26);
-      /* Changed border color to black */
-      border-radius: 10px;
-      padding: 11px;
-      background-color: #000;
-      color: #fff;
-      width: 80%;
-      max-width: 600px;
-      margin: 0;
-      /* Removed 'auto' to align to the left */
-      float: left;
-      /* Added to position the terminal on the left */
-      box-shadow: 0px 0px 2cap #00ff00;
-    }
-
-    .prompt {
-      color: #1fc21f;
-      text-shadow: 1px 1px 2px black, 0 0 25px #00ff00, 0 0 5px #07f007;
-    }
-
-    .terminal input[type="text"] {
-      background-color: rgb(26, 26, 26); /* Set background color to black */
-      color: white; /* Set text color to white */
-      border: none; /* Remove border */
-      outline: none; /* Remove outline */
-      width: calc(100% - 20px); /* Adjust width to compensate padding */
-      padding: 10px; /* Add padding */
-      box-sizing: border-box; /* Include padding and border in element's total width and height */
-      box-shadow: 0px 0px 2cap #00ff00;
-      border-radius: 10px;
-    }
-  </style>
 </head>
-
 <body>
   <div class="terminal">
-    <pre class="prompt">
-__          __  _        _______                  
-\ \        / / | |      |__   __|                 
- \ \  /\  / /__| |__       | | ___ _ __ _ __ ___  
-  \ \/  \/ / _ \ '_ \      | |/ _ \ '__| '_ ` _ \ 
-   \  /\  /  __/ |_) |     | |  __/ |  | | | | | |
-    \/  \/ \___|_.__/      |_|\___|_|  |_| |_| |_|                                
+    <pre class="prompt2">
+██╗    ██╗███████╗██████╗     ████████╗███████╗██████╗ ███╗   ███╗
+██║    ██║██╔════╝██╔══██╗    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║
+██║ █╗ ██║█████╗  ██████╔╝       ██║   █████╗  ██████╔╝██╔████╔██║
+██║███╗██║██╔══╝  ██╔══██╗       ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║
+╚███╔███╔╝███████╗██████╔╝       ██║   ███████╗██║  ██║██║ ╚═╝ ██║
+ ╚══╝╚══╝ ╚══════╝╚═════╝        ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝
+                                                                                                      
     </pre>
-    <p>Welcome to the best <span class="prompt">Terminal</span> site.</p>
-    <p>Type "<span class="prompt">help</span>" for a list of available commands.</p>
+    <p><span class="textwhite">Welcome to the best </span><span class="prompt">Terminal</span><span class="textwhite"> site.</span></p>
+    <p><span class="textwhite">Type "</span><span class="prompt">help</span><span class="textwhite">" for a list of available commands.</span></p>
     <div id="output"></div>
     <input type="text" id="command" autocomplete="off" autofocus>
   </div>
-
   <script>
     const output = document.getElementById('output');
     const commandInput = document.getElementById('command');
-
     commandInput.addEventListener('keyup', function (event) {
       if (event.key === 'Enter') {
         const command = commandInput.value.trim().toLowerCase();
@@ -76,27 +32,26 @@ __          __  _        _______
         executeCommand(command);
       }
     });
-
     function executeCommand(command) {
       switch (command) {
         case 'help':
           output.innerHTML += `
             <p>
-              Available Commands:
+              <span class="textwhite">Available Commands:</span>
               <br>
-              <span class="prompt">home</span> - Home Page (This Page)
+              <span class="prompt">home</span><span class="textwhite"> - Home Page (This Page)</span>
               <br>
-              <span class="prompt">about</span> - About Web Terminal
+              <span class="prompt">about</span><span class="textwhite"> - About Web Terminal</span>
               <br>
-              <span class="prompt">idea</span> - Give Ideas For The Site!
+              <span class="prompt">idea</span><span class="textwhite"> - Give Ideas For The Site!</span>
               <br>
-              <span class="prompt">games</span> - Unblocked Games
+              <span class="prompt">games</span><span class="textwhite"> - Unblocked Games</span>
               <br>
-              <span class="prompt">week</span> - Site Of The Week
+              <span class="prompt">week</span><span class="textwhite"> - Site Of The Week</span>
               <br>
-              <span class="prompt">calculator</span> - Easy Calculation
+              <span class="prompt">calculator</span><span class="textwhite"> - Easy Calculation</span>
               <br>
-              <span class="prompt">contact</span> - Contact Me
+              <span class="prompt">contact</span><span class="textwhite"> - Contact Me</span>
             </p>
           `;
           break;
@@ -105,7 +60,21 @@ __          __  _        _______
             <p>
               Available Games:
               <br>
-              <span class="prompt">snake</span> - Simple Javascript Game (coming soon)
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
+              <br>
+              <span class="prompt">game</span> - (coming soon)
               <br>
             </p>
           `;
@@ -140,5 +109,4 @@ __          __  _        _______
     }
   </script>
 </body>
-
 </html>
