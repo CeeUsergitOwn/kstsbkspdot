@@ -1,54 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Terminal</title>
-  <style>
-    body {
-      font-family: monospace;
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      margin: 0;
-    }
-
-    .terminal {
-      border: 2px solid rgb(26, 189, 26);
-      /* Changed border color to black */
-      border-radius: 10px;
-      padding: 11px;
-      background-color: #000;
-      color: #fff;
-      width: 80%;
-      max-width: 600px;
-      margin: 0;
-      /* Removed 'auto' to align to the left */
-      float: left;
-      /* Added to position the terminal on the left */
-      box-shadow: 0px 0px 2cap #00ff00;
-    }
-
-    .prompt {
-      color: #1fc21f;
-      text-shadow: 1px 1px 2px black, 0 0 25px #00ff00, 0 0 5px #07f007;
-    }
-
-    .terminal input[type="text"] {
-      background-color: rgb(26, 26, 26); /* Set background color to black */
-      color: white; /* Set text color to white */
-      border: none; /* Remove border */
-      outline: none; /* Remove outline */
-      width: calc(100% - 20px); /* Adjust width to compensate padding */
-      padding: 10px; /* Add padding */
-      box-sizing: border-box; /* Include padding and border in element's total width and height */
-      box-shadow: 0px 0px 2cap #00ff00;
-      border-radius: 10px;
-    }
-  </style>
 </head>
-
 <body>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemUQFY7nV78EfQPh1DXj87HayUyAXON9yOXrZ3LomtaFg8nw/viewform?embedded=true" width="300" height="200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   <div class="terminal">
@@ -56,7 +13,6 @@
     <div id="output"></div>
     <input type="text" id="command" autocomplete="off" autofocus>
   </div>
-
   <script>
     const output = document.getElementById('output');
     const commandInput = document.getElementById('command');
@@ -68,7 +24,6 @@
         executeCommand(command);
       }
     });
-
     function executeCommand(command) {
       switch (command) {
         case 'help':
@@ -91,5 +46,4 @@
     }
   </script>
 </body>
-
 </html>
