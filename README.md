@@ -1,3 +1,3 @@
 # Terminal Website
 
-use if u want made by Alixiir Studios
+use if u want 
